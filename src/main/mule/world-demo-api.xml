@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="7585c619-80fa-4a2f-b803-c0ec2bb5d42d" basePath="/timezone">
-		<http:listener-connection host="0.0.0.0" port="8086" />
+		<http:listener-connection host="0.0.0.0" port="8081" />
 		
 	</http:listener-config>
 	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="dd1e9a6d-b448-4899-aafc-ff46048a6e0e" basePath="/api/timezone" >
@@ -22,5 +22,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 }]]]></http:uri-params>
 		</http:request>
 		<logger level="INFO" doc:name="Logger" doc:id="6905a9fb-dccb-457a-9d66-fa9e48b0b960" message="#[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="2491cba8-e636-4abf-9dbe-be276ecee185" message="Success"/>
 	</flow>
 </mule>
