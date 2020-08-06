@@ -41,6 +41,7 @@
 				<applicationName>worldtimexone-service</applicationName>
 				<password>DCJ11@.com</password>
 				<muleVersion>4.3.0</muleVersion>
+				<objectStoreV2>true</objectStoreV2>
 				</cloudHubDeployment>
 				
 				
