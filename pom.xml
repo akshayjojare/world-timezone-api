@@ -32,7 +32,6 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>	
 				
-				
 				<configuration>
 				<cloudHubDeployment>
 				<username>akshay102</username>
